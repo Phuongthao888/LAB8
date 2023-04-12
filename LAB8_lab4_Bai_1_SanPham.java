@@ -1,11 +1,11 @@
-package com.mycompany.lab8;
+package LAB4_BAI1;
 
 import java.util.Scanner;
 
 public class SanPham {
-    private String tenSp;
-    private double donGia;
-    private double giaGiam;
+    public String tenSp;
+    public double donGia;
+    public double giaGiam;
     
     public SanPham(){
         
@@ -14,30 +14,6 @@ public class SanPham {
     public SanPham(String tenSp, double donGia, double giaGiam){
         this.tenSp = tenSp;
         this.donGia = donGia;
-        this.giaGiam = giaGiam;
-    }
-
-    public String getTenSp() {
-        return tenSp;
-    }
-
-    public void setTenSp(String tenSp) {
-        this.tenSp = tenSp;
-    }
-
-    public double getDonGia() {
-        return donGia;
-    }
-
-    public void setDonGia(double donGia) {
-        this.donGia = donGia;
-    }
-
-    public double getGiaGiam() {
-        return giaGiam;
-    }
-
-    public void setGiaGiam(double giaGiam) {
         this.giaGiam = giaGiam;
     }
 
@@ -52,20 +28,15 @@ public class SanPham {
     
     public void Nhap(){
         Scanner sc = new Scanner(System.in);
-        String tenSp;
-        double donGia;
-        double giaGiam;
         
-    
-        System.out.println("Nhap Ten san pham: ");
-        this.setTenSp(sc.nextLine());
+        System.out.print("Nhap Ten san pham: ");
+        tenSp = sc.nextLine();
         
-        System.out.println("Nhap don gia: ");
-        this.setDonGia(sc.nextDouble());
+        System.out.print("Nhap don gia: ");
+        donGia = sc.nextDouble();
         
-        System.out.println("Nhap gia giam: ");
-        this.setGiaGiam(sc.nextDouble());
-
+        System.out.print("Nhap gia giam: ");
+        giaGiam = sc.nextDouble();
     }
     
     public void Xuat(){
