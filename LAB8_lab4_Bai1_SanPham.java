@@ -43,7 +43,7 @@ public class SanPham {
 
     @Override
     public String toString() {
-        return "tenSp=" + tenSp + ", donGia=" + donGia + ", giaGiam=" + giaGiam;
+        return "tenSp=" + tenSp + ", donGia=" + donGia + ", giaGiam=" + giaGiam + ",    Thue nhap khau: " + ThueNhapKhau();
     }
     
     public double ThueNhapKhau(){
@@ -56,6 +56,7 @@ public class SanPham {
         double donGia;
         double giaGiam;
         
+    
         System.out.println("Nhap Ten san pham: ");
         this.setTenSp(sc.nextLine());
         
