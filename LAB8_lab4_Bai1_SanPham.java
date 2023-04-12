@@ -56,7 +56,6 @@ public class SanPham {
         double donGia;
         double giaGiam;
         
-        this.setTenSp(sc.nextLine());
         System.out.println("Nhap Ten san pham: ");
         this.setTenSp(sc.nextLine());
         
