@@ -1,6 +1,8 @@
 package LAB5_BAI2;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class DanhSach {
@@ -49,5 +51,16 @@ public class DanhSach {
                this.danhsach.remove(t);
                     break;
             }
+    }
+    
+    public void NgauNhien(){
+        Collections.sort(danhsach);
+        Collections.reverse(danhsach);
+        Xuat();
+    }
+    
+    public void SapXep(){
+        Collections.shuffle(danhsach);
+        Xuat();
     }
 }
